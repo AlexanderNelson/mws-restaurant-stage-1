@@ -13,7 +13,7 @@ position:relative;
 max-width:1100px;
 margin-left:auto;
 margin-right:auto;
-background: url("../img/bg1-min.jpg");
+background:url(../img/bg1-min.jpg)
 }
 
 a:hover,a:focus {
@@ -26,22 +26,13 @@ font-family:Arial,Helvetica,sans-serif;
 margin:0 0 20px;
 color:#92053f
 }
-/*a h3 {
-color:#a85900;
-font-family:Arial,sans-serif;
-font-size:18px;
-font-weight:200;
-letter-spacing:0;
-margin:15px 10px;
-text-transform:uppercase
-}*/
 
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block
 }
 
 #maincontent {
-background-color:rgb(167, 153, 151, 0.8);
+background-color:#a79997;
 min-height:100%;
 display:flex;
 flex-direction:column;
@@ -82,8 +73,7 @@ top:20px
 #map {
 height:400px;
 width:100%;
-background-color:rgb(167, 153, 151, 0.8);
-
+background-color:#a79997;
 text-align:center
 }
 
@@ -101,8 +91,7 @@ height:200px
 }
 
 .inside #map {
-background-color:rgb(167, 153, 151, 0.8);
-
+background-color:#a79997;
 height:100%;
 width:100%
 }
@@ -174,23 +163,6 @@ margin-right:10px
 margin-bottom:15px
 }
 
-/*#review-entry button {
-background-color:#a85900;
-border-bottom:3px solid #eee;
-color:#f0f0f0;
-display:inline-block;
-font-size:14px;
-margin:15px 0 0;
-padding:8px 30px 10px;
-text-align:center;
-text-decoration:none;
-text-transform:uppercase;
-cursor:pointer;
-position:absolute;
-bottom:10px;
-right:10px
-}*/
-
 #breadcrumb {
 padding:10px;
 list-style:none;
@@ -224,16 +196,6 @@ text-decoration:underline
 color:#666;
 text-decoration-line:none
 }
-
-/*#restaurant-name {
-color:orange;
-font-family:Arial,sans-serif;
-font-size:24px;
-font-weight:200;
-letter-spacing:0;
-margin:15px 10px;
-text-transform:uppercase
-}*/
 
 #restaurant-img {
 width:100%
@@ -274,19 +236,12 @@ border-top:1px solid #fff
 padding:30px 20px 80px
 }
 
-/*#reviews-container h2 {
-color:#a85900;
-font-size:24pt;
-font-weight:300;
-letter-spacing:-1px;
-padding-bottom:1pt
-}*/
 button {
-    color: #92053f;
-    background-color: #f1c4d6;
-    border-radius: 16px;
-    margin: 15px
-  }
+color:#92053f;
+background-color:#f1c4d6;
+border-radius:16px;
+margin:15px
+}
 
 #reviews-list {
 margin:0;
@@ -294,7 +249,7 @@ padding:0
 }
 
 #reviews-list li {
-background-color:rgb(255, 204, 255, 0.5);
+background-color:#fcf;
 border:2px solid #f3f3f3;
 display:block;
 list-style-type:none;
@@ -375,11 +330,7 @@ margin:10px;
 width:200px
 }
 
-#restaurants-list {/*
-background-color:#f3f3f3;
-list-style:outside none none;
-margin:0;
-padding:30px 15px 60px;*/
+#restaurants-list {
 text-align:center;
 display:flex;
 flex-direction:row;
@@ -389,12 +340,9 @@ justify-content:center
 
 #restaurants-list li {
 background-color:#efefefb5;
-/*border:2px solid #ccc;
-font-family:Arial,sans-serif;
-*/margin:4px;
+margin:4px;
 min-height:380px;
-padding:0 0 25px;/*
-text-align:left;*/
+padding:0 0 25px;
 min-width:270px;
 max-width:300px
 }
@@ -426,69 +374,10 @@ min-width:100%;
 overflow:hidden
 }
 
-/*#restaurants-list .restaurant-text-area {
-padding:0 25px;
-margin-top:10px;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-min-height:170px;
-max-height:170px;
-position:relative
-}*/
-
-/*#restaurants-list li h1 {
-color:#f18200;
-font-family:Arial,sans-serif;
-font-size:14pt;
-font-weight:200;
-letter-spacing:0;
-line-height:1.3;
-margin:20px 0 10px;
-text-transform:uppercase
-}*/
-
 #restaurants-list p {
 margin:0;
 font-size:11pt
 }
-
-/*#restaurants-list li button {
-background-color:#a85900;
-border-bottom:3px solid #eee;
-color:#f0f0f0;
-display:inline-block;
-font-size:14px;
-margin:15px 0 0;
-padding:8px 30px 10px;
-text-align:center;
-text-decoration:none;
-text-transform:uppercase;
-cursor:pointer
-}*/
-/*button{
- display:inline-block;
- padding:0.3em 1.2em;
- margin:0 0.3em 0.3em 0;
- border-radius:2em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- background-color:#4eb5f1;
- text-align:center;
- transition: all 0.2s;
-}
-button:hover{
- background-color:#4095c6;
-}
-@media all and (max-width:30em){
- button {
-  display:block;
-  margin:0.2em auto;
- }
-}*/
 
 .filter-selects {
 display:flex;
