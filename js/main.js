@@ -1,9 +1,25 @@
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker
+//   .register('/sw.js')
+//   .catch(function(err) {
+//     console.error(err);
+//   });
+// }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+  .register("/sw.js")
+  .then(reg => {
+    console.log("serviceWorker Reg Successful!");
+  })
+  .catch(error => {
+    console.log("serviceWorker Reg Fail???");
+  });
+}
 let restaurants,
   neighborhoods,
   cuisines
 var newMap
 var markers = []
-
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -216,4 +232,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-

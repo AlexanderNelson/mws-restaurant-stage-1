@@ -17,51 +17,59 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
-    </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
-    <!-- End nav -->
-  </header>
-  <!-- End header -->
+      <nav>
+        <h1>
+          <a href="/">Restaurant Reviews</a>
+        </h1>
+      </nav>
 
-  <!-- Beginning main -->
-  <main id="maincontent">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-    <!-- End map -->
-    <!-- Beginning restaurant -->
-    <section id="restaurant-container">
-      <h2 id="restaurant-name"></h2>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-    </section>
-    <section id="restaurant-info">
-      <p id="restaurant-address" aria-labeledby="restaurant-address-label" ></p>
-      <label id="restaurant-address-label" class="restaurant-info-label">address</label>
-      <section id="map-container" aria-labelledby="map-aria-description" role="application">
-        <div id="map"></div>
+
+
+      <!-- Beginning breadcrumb -->
+      <nav aria-label="Breadcrumb">
+        <ol id="breadcrumb">
+          <li>
+            <a href="/">Home</a>
+          </li>
+        </ol>
+      </nav>
+      <!-- End breadcrumb -->
+      <!-- End nav -->
+    </header>
+    <!-- End header -->
+
+    <!-- Beginning main -->
+    <main id="maincontent">
+      <!-- Beginning restaurant -->
+      <section id="restaurant-container">
+        <h3 id="restaurant-name"></h3>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
       </section>
-      <label id="map-aria-description" class="map-aria-description">Google Maps</label>
-      <div class="restaurant-hours">
-        <table id="restaurant-hours" aria-labelledby="restaurant-hours-label"></table>
-        <label id="restaurant-hours-label" class="restaurant-info-label">Business Hours</label>
-      </div>
-    </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
-    <section id="reviews-container">
-      <ul id="reviews-list"></ul>
-    </section>
-    <!-- End reviews -->
-  </main>
-  <!-- End main -->
+      <section id="restaurant-address-and-hours">
+        <h4 id="restaurant-address" aria-labelledby="restaurant-address-label"></h4>
+        <label id="restaurant-address-label" class="restaurant-info-label">address</label>
+        <!-- Beginning map -->
+        <section id="map-container" aria-labelledby="map-aria-description" role="application">
+          <div id="map"></div>
+        </section>
+        <label id="map-aria-description" class="map-aria-description">Map Box</label>
+        <!-- End map -->
+        <div class="restaurant-hours-flex">
+          <table id="restaurant-hours" aria-labelledby="restaurant-hours-label"></table>
+          <label id="restaurant-hours-label" class="restaurant-info-label">Business Hours</label>
+        </div>
+      </section>
+      <!-- end restaurant -->
+      <!-- Beginning reviews -->
+      <section id="reviews-container">
+        <ul id="reviews-list"></ul>
+
+      </section>
+      <!-- End reviews -->
+    </main>
+    <!-- End main -->
+
 
   <!-- Beginning footer -->
   <footer id="footer">
@@ -77,7 +85,6 @@
   <!-- Google Maps -->
  <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script> -->
   <!-- End scripts -->
-
 </body>
 
 </html>
