@@ -63,7 +63,7 @@ border:none;
 margin:0;
 padding:0;
 color:transparent;
-font-size:2px
+font-size:2px;
 }
 
 #maincontent .favorite-icon button {
@@ -335,7 +335,8 @@ text-align:center;
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-justify-content:center
+justify-content:center;
+list-style: none
 }
 
 #restaurants-list li {
