@@ -1,4 +1,4 @@
-
+// This file replaces "sw.js" and automatically caches all visited web pages in service worker
 const cacheName = 'v3';
 
 self.addEventListener('install', e => {

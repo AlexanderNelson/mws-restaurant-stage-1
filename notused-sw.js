@@ -1,4 +1,4 @@
-
+// This file kept for demonstration . Functionality replaced by "sw-full-site"
 const cacheName = 'v2';
 
 const cacheAssets = [

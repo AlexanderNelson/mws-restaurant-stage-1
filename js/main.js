@@ -1,25 +1,7 @@
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker
-//   .register('/sw.js')
-//   .catch(function(err) {
-//     console.error(err);
-//   });
-// }
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker
-//   .register("/sw.js")
-//   .then(reg => {
-//     console.log("serviceWorker Reg Successful!");
-//   })
-//   .catch(error => {
-//     console.log("serviceWorker Reg Fail???");
-//   });
-// }
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-    .register('../sw.js')
+    .register('../sw-full-site.js')
     .then(reg => console.log('serviceWorker Reg Successful!'))
     .catch(err => console.log(`sw error: ${err}`))
   })
@@ -187,6 +169,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name + " snapshot";
   li.append(image);
 
   const div = document.createElement('div');
